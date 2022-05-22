@@ -3,6 +3,7 @@ title: 自己紹介
 description: 
 published: true
 date: 2021-12-05T12:50:55.953Z
+lastmod: 2022-05-23T00:31:17+0900
 tags: 
 editor: markdown
 dateCreated: 2021-05-15T09:15:27.958Z
@@ -16,7 +17,7 @@ dateCreated: 2021-05-15T09:15:27.958Z
 
 ## リンク集
 - [GitHub](https://github.com/akriaueno)
-- [Twitter](https://twitter.com/AkrU79)
+- [Twitter](https://twitter.com/__akky__)
 
 ## 趣味について
 ### 趣味1: インフラ構築・保守
@@ -26,7 +27,7 @@ dateCreated: 2021-05-15T09:15:27.958Z
 - ルータ: Cisco 891FJ
 - サーバ: HP ProDesk 405 G6 DM
 
-以前はRaspberry Pi上にDHCPサーバとDNSサーバを立てるなどもしていましたが、面倒になりネットワークはCisco891FJですべて設定するようにしました。サーバは安価で省スペースなHP ProDesk 405 G6 DMを用いています。このWikiもHP ProDesk 405 G6 DM上で動いています。そろそろDocker ComposeからK8sに移行したいです。
+以前はRaspberry Pi上にDHCPサーバとDNSサーバを立てるなどもしていましたが、面倒になりネットワークはCisco891FJですべて設定するようにしました。サーバは安価で省スペースなHP ProDesk 405 G6 DMを用いています。このブログもHP ProDesk 405 G6 DM上で動いています。
 
 ### 趣味2: ゲーム
 以下はハマったゲームです。Steamで購入すれば、いずれもDebian/Ubuntuでプレイできます。
