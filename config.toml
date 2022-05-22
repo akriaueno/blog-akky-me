@@ -1,0 +1,8 @@
+baseURL = 'http://blog.akky.me/'
+languageCode = 'jp-ja'
+title = 'akky blog'
+theme = 'ananke'
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
