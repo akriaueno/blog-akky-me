@@ -72,3 +72,7 @@ theme = "mainroad"
   twitter = "__akky__"
   github = "akriaueno"
   email = "akky@akky.me"
+
+[[Params.widgets.social.custom]]
+  title = "コメント・間違いのご指摘はこちらまで！"
+  url = "https://github.com/akriaueno/blog-akky-me/discussions"
