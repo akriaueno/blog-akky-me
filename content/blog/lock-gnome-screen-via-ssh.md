@@ -6,7 +6,7 @@ tags: [gnome, linux, ssh]
 
 ## Overview
 
-I want to lock gnome-session(Desktop) with a user logged in via ssh user.
+I want to lock gnome-session(Desktop) with a user logged in via ssh.
 
 ## Script
 
