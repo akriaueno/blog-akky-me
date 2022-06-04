@@ -74,5 +74,5 @@ theme = "mainroad"
   email = "akky@akky.me"
 
 [[Params.widgets.social.custom]]
-  title = "コメント・間違いのご指摘はこちらまで！(Please comment!)"
+  title = "コメントはこちらまで！(Please comment!)"
   url = "https://github.com/akriaueno/blog-akky-me/discussions"
