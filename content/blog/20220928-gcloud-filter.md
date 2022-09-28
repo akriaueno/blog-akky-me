@@ -2,11 +2,11 @@
 title: gcloudのフィルタについて
 description:
 published: true
-date: 2022-09-28T16:39+09:00
-lastmod: 2022-09-28T16:39+09:00
+date: 2022-09-28
+lastmod: 2022-09-28
 tags: [gcloud, gcp]
 editor: markdown
-dateCreated: 2022-09-28T16:39+09:00
+dateCreated: 2022-09-28
 ---
 
 ## [フィルタ可能なキーを探す](https://cloud.google.com/sdk/gcloud/reference/topic/filters#term-1:~:text=Determine%20which%20fields%20are%20available%20for%20filtering)
