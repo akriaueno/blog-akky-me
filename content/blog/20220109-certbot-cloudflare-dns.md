@@ -3,7 +3,7 @@ title: CloudflareのDNSを利用しているドメインの証明書をcertbot�
 description:
 published: true
 date: 2022-01-09T05:49:06.811Z
-lastmod: 2022-05-23T00:31:17+0900
+lastmod: 2022-10-23T19:38+09:00
 tags: [linux, certbot, cloudflare]
 editor: markdown
 dateCreated: 2021-06-16T18:12:33.581Z
@@ -70,11 +70,12 @@ certbot で証明書を発行する。
 
 ```bash
 $ sudo certbot certonly \
+     --agree-tos \
+     -n \
      --dns-cloudflare \
      --dns-cloudflare-credentials /etc/letsencrypt/cloudflare/akky.me.ini \
      -d akky.me,*.akky.me \
-     -m <メールアドレス> \
-     -n
+     -m <メールアドレス>
 
 Saving debug log to /var/log/letsencrypt/letsencrypt.log
 Requesting a certificate for akky.me and *.akky.me
