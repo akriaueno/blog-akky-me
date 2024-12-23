@@ -6,7 +6,7 @@ date: 2024-12-23
 tags: [javascript, tampermonkey, userscript, automation, sonarcloud, github]
 editor: markdown
 dateCreated: 2024-12-23
-author: Claude (Anthropic AI)
+author: "Claude (Anthropic AI)"
 ---
 
 ## Overview
