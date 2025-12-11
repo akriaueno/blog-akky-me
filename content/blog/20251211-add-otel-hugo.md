@@ -1,10 +1,8 @@
 ---
 title: "Hugo に OpenTelemetry を追加してみる"
 date: 2025-12-11T23:53:00+09:00
-draft: true
+draft: false
 ---
-
-# Hugo に OpenTelemetry を追加してみる
 
 この記事は [OpenTelemetry Advent Calendar 2025](https://qiita.com/advent-calendar/2025/otel) 11日目の記事です。
 
