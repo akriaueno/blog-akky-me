@@ -1,0 +1,8 @@
+{{- /*
+Custom replacement for Hugo's removed built-in gist shortcode.
+Usage: {{< gist user gist_id [file] >}}
+*/ -}}
+{{- $user := .Get 0 -}}
+{{- $id := .Get 1 -}}
+{{- $file := .Get 2 | default "" -}}
+<script src="https://gist.github.com/{{ $user }}/{{ $id }}.js{{ if $file }}?file={{ $file }}{{ end }}"></script>
