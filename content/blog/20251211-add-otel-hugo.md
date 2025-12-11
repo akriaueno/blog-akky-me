@@ -118,7 +118,7 @@ Honeycomb でトレースを確認します。
 ## まとめ
 OpenTelemetry の計装を Hugo に追加してみました。
 Hugo の JS.Build と Cloudflare Workers を利用して、簡単に OpenTelemetry を追加することができました。
-本番環境では考慮すべき点が多そうですが、今回は趣味のサイトなのでシンプルに実装しました。
+プロダクトで使う場合は、料金コストやサンプリングによるデータの損失など考慮すべき点が多そうですが、今回は趣味のサイトなのでシンプルに実装しました。
 
 ## PR
 * https://github.com/akriaueno/blog-akky-me/pull/3
