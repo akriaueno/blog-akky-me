@@ -105,7 +105,7 @@ layouts/_default/baseof.html に以下を追加します。
 Cloudflare Workers でトレースを Honeycomb に転送するコードを作成します。
 LLMに作ってもらいました。 
 [コードはこちら](https://github.com/akriaueno/blog-akky-me/tree/master/akky-me-honeycomb-worker)。
-ホストが異なる場合はCORSの設定が必要です。
+フロントエンドとホストが異なる場合はCORSの設定が必要です。
 本来はサンプリングやフィルタリングを行うべきですが、今回は過疎サイトなので全て集計します。
 
 
