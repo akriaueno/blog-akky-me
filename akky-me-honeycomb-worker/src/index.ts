@@ -3,13 +3,22 @@ const HNY_TRACES_ENDPOINT = 'https://api.honeycomb.io/v1/traces';
 const corsHeaders = {
   'Access-Control-Allow-Origin': 'https://blog.akky.me',
   'Access-Control-Allow-Methods': 'POST, OPTIONS',
-  'Access-Control-Allow-Headers': 'content-type',
+  // Allow credentials because the browser fetch defaults to `credentials: "include"`.
+  'Access-Control-Allow-Credentials': 'true',
+  // Allow common OTLP headers; fall back to request's list in preflight handler below.
+  'Access-Control-Allow-Headers': 'content-type, authorization, x-honeycomb-team',
 };
 
 export default {
   async fetch(request: Request, env: Env, ctx: ExecutionContext): Promise<Response> {
     if (request.method === 'OPTIONS') {
-      return new Response(null, { status: 204, headers: corsHeaders });
+      // Echo requested headers for stricter browsers when present
+      const requestedHeaders = request.headers.get('access-control-request-headers');
+      const headers = new Headers(corsHeaders);
+      if (requestedHeaders) {
+        headers.set('Access-Control-Allow-Headers', requestedHeaders);
+      }
+      return new Response(null, { status: 204, headers });
     }
 
     if (request.method !== 'POST') {
