@@ -85,6 +85,21 @@ registerInstrumentations({
 ```
 ほぼ雛形そのままです。OpenTelemetryの[Getting Started](https://opentelemetry.io/docs/instrumentation/js/getting-started/)と[Example](https://github.com/open-telemetry/opentelemetry-js/blob/main/examples/opentelemetry-web/examples/fetch/index.js)を参考にして作成しました。
 
+次に、layouts/partials/otel.html を作成します。hugoのJS.Buildを利用して、OpenTelemetryの計装スクリプトをフロントエンドに追加します。
+```html
+{{ $opts := dict "target" "es2020" "format" "esm" "minify" (not hugo.IsServer) }}
+{{ with resources.Get "js/document-load.ts" | js.Build $opts | fingerprint "sha384" }}
+<script type="module" src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous"></script>
+{{ end }}
+```
+
+layouts/_default/baseof.html に以下を追加します。
+```html
+{{ partial "otel.html" . }}
+```
+
+これでフロントエンドに OpenTelemetry の計装スクリプトが追加されます。
+
 
 ### 2. バックエンド(Cloudflare Workers)でトレースを送信して Honeycomb に転送する。
 Cloudflare Workers でトレースを Honeycomb に転送するコードを作成します。
