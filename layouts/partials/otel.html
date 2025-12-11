@@ -1,0 +1,4 @@
+{{ $opts := dict "target" "es2020" "format" "esm" "minify" (not hugo.IsServer) }}
+{{ with resources.Get "js/document-load.ts" | js.Build $opts | fingerprint "sha384" }}
+<script type="module" src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous"></script>
+{{ end }}

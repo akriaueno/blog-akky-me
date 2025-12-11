@@ -13,3 +13,6 @@ hugo.linux
 /.hugo_build.lock
 
 .vscode/
+
+# node.js
+node_modules/
