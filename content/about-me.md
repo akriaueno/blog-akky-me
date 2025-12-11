@@ -1,9 +1,8 @@
 ---
 title: 自己紹介
 description: 
-published: true
 date: 2021-12-05T12:50:55.953Z
-lastmod: 2022-05-23T00:31:17+0900
+lastmod: 2022-05-23T00:31:17+09:00
 tags: 
 editor: markdown
 dateCreated: 2021-05-15T09:15:27.958Z

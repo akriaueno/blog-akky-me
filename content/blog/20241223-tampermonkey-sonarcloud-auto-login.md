@@ -1,7 +1,6 @@
 ---
 title: Auto-Login Script for SonarCloud with GitHub Authentication
 description: A Tampermonkey script to automate SonarCloud login process
-published: true
 date: 2024-12-23
 tags: [javascript, tampermonkey, userscript, automation, sonarcloud, github]
 editor: markdown

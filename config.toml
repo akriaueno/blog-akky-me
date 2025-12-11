@@ -1,8 +1,10 @@
 baseURL = 'http://blog.akky.me/'
 languageCode = 'jp-ja'
 title = 'akky blog'
-paginate = "10" # Number of posts per page
 theme = "mainroad"
+
+[pagination]
+  pagerSize = 10
 
 [taxonomies]
   tag = "tags"
@@ -10,6 +12,11 @@ theme = "mainroad"
 
 
 [Author] # Used in authorbox
+  name = "Akira Ueno"
+  bio = "[自己紹介](/about-me/)"
+  avatar = "img/avatar.png"
+
+[Params.author]
   name = "Akira Ueno"
   bio = "[自己紹介](/about-me/)"
   avatar = "img/avatar.png"
