@@ -1,0 +1,20 @@
+{{- $title := .Title | default .Site.Title }}
+{{- $description := .Description | default .Summary | default .Site.Params.description }}
+{{- $ogType := cond .IsHome "website" "article" }}
+{{- $ogImage := partial "head/og-image.html" . }}
+{{- $langCode := .Site.LanguageCode | default .Site.Language.Lang }}
+{{- $locale := $langCode | lower | replaceRE "-" "_" }}
+
+	<meta property="og:url" content="{{ .Permalink }}" />
+{{ with .Site.Title }}
+	<meta property="og:site_name" content="{{ . }}" />
+{{ end }}
+	<meta property="og:title" content="{{ $title }}" />
+	<meta property="og:description" content="{{ $description }}" />
+{{ if $locale }}
+	<meta property="og:locale" content="{{ $locale }}" />
+{{ end }}
+	<meta property="og:type" content="{{ $ogType }}" />
+{{ with $ogImage }}
+	<meta property="og:image" content="{{ . }}" />
+{{ end }}
