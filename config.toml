@@ -41,6 +41,22 @@ theme = "mainroad"
   customCSS = ["css/custom.css"] # Include custom CSS files
   customJS = ["js/custom.js"] # Include custom JS files
 
+[Params.giscus]
+  enable = true
+  # Get repo/category IDs from https://giscus.app and fill in the values below
+  repo = "akriaueno/blog-akky-me"
+  repoId = "R_kgDOHYJJug"
+  category = "Q&A"
+  categoryId = "DIC_kwDOHYJJus4CPO_X"
+  mapping = "pathname"
+  strict = "0"
+  reactionsEnabled = "1"
+  emitMetadata = "0"
+  inputPosition = "top"
+  theme = "preferred_color_scheme"
+  lang = "ja"
+  loading = "lazy"
+
   # DEPRECATED PARAMS
   subtitle = "" # Deprecated in favor of .Site.Params.logo.subtitle
   highlightColor = "" # Deprecated in favor of .Site.Params.style.vars.highlightColor
