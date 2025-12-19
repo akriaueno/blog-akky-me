@@ -2,6 +2,7 @@
 title: 正規表現でマッチしたグループを複数抽出する
 description: 
 date: 2021-07-23T19:14:19.648Z
+aliases: ["/blog/20210723-shell-extract-match/"]
 tags: [linux, shell, regex, sed]
 editor: markdown
 dateCreated: 2021-06-30T17:54:11.412Z

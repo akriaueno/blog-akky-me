@@ -1,6 +1,7 @@
 ---
 title: "Hugo に OpenTelemetry を追加してみる"
 date: 2025-12-11T23:53:00+09:00
+aliases: ["/blog/20251211-add-otel-hugo/"]
 draft: false
 ---
 

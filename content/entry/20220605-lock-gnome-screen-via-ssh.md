@@ -1,6 +1,7 @@
 ---
 title: "Lock Gnome Screen via SSH"
 date: 2022-06-05T02:30:43+09:00
+aliases: ["/blog/20220605-lock-gnome-screen-via-ssh/"]
 tags: [gnome, linux, ssh]
 ---
 

@@ -3,6 +3,7 @@ title: Growiの管理者パスワードを手動で変更する
 description: 
 date: 2022-03-28T07:55:57.191Z
 lastmod: 2022-09-28
+aliases: ["/blog/20220328-change-growi-password-manually/"]
 tags: [growi, パスワード]
 editor: markdown
 dateCreated: 2022-03-06T12:48:20.925Z

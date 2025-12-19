@@ -3,6 +3,7 @@ title: CloudflareのDNSを利用しているドメインの証明書をcertbot�
 description:
 date: 2022-01-09T05:49:06.811Z
 lastmod: 2022-10-23T19:38:00+09:00
+aliases: ["/blog/20220109-certbot-cloudflare-dns/"]
 tags: [linux, certbot, cloudflare]
 editor: markdown
 dateCreated: 2021-06-16T18:12:33.581Z
