@@ -8,13 +8,13 @@
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Params.Description }}{{ end }}">
 	{{- if .Site.Params.opengraph }}
-		{{ partial "head/opengraph.html" . }}
+		{{ template "_internal/opengraph.html" . }}
 	{{- end }}
 	{{- if .Site.Params.schema }}
 		{{ template "_internal/schema.html" . }}
 	{{- end }}
 	{{- if .Site.Params.twitter_cards }}
-		{{ partial "head/twitter_cards.html" . }}
+		{{ template "_internal/twitter_cards.html" . }}
 	{{- end }}
 
 	{{- $googleFontsLink := .Site.Params.googleFontsLink | default "https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" }}
@@ -36,9 +36,6 @@
 	{{- end }}
 
 	<link rel="shortcut icon" href="{{ "favicon.ico" | relURL }}">
-	{{- if not hugo.IsServer }}
-		{{ template "_internal/google_analytics.html" . }}
-	{{- end }}
 </head>
 <body class="body">
 	<div class="container container--outer">
@@ -57,9 +54,6 @@
 		</div>
 		{{ block "footer" . }}{{ partial "footer.html" . }}{{ end }}
 	</div>
-
-{{ partial "otel.html" . }}
-
 <script async defer src="{{ "js/menu.js" | relURL }}"></script>
 {{ range .Site.Params.customJS -}}
 <script src="{{ . | relURL }}"></script>
