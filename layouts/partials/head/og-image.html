@@ -1,0 +1,38 @@
+{{- $ogImage := "" -}}
+
+{{- if .Params.images -}}
+  {{- $ogImage = index .Params.images 0 | absURL -}}
+{{- else -}}
+  {{- $baseImg := resources.Get "images/og-bg.png" -}}
+  {{- $font := resources.Get "fonts/NotoSansCJKjp-Bold.otf" -}}
+  {{- if $baseImg -}}
+    {{- if $font -}}
+    {{- $siteTitle := .Site.Title -}}
+    {{- $title := .Title | default .Site.Title -}}
+    {{- $siteStyle := dict
+      "x" 60
+      "y" 210
+      "size" 36
+      "color" "#9fb3d9"
+      "font" $font
+      "linespacing" 8
+    -}}
+    {{- $titleStyle := dict
+      "x" 60
+      "y" 280
+      "size" 60
+      "color" "#ffffff"
+      "font" $font
+      "linespacing" 10
+    -}}
+    {{- $generatedImg := $baseImg.Filter (images.Text $siteTitle $siteStyle) (images.Text $title $titleStyle) -}}
+      {{- $ogImage = $generatedImg.Permalink -}}
+    {{- else -}}
+      {{- $ogImage = $baseImg.Permalink -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- with $ogImage -}}
+{{- . -}}
+{{- end -}}
